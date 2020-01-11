@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/hello")
 public class HelloWorldController {
 
-    @Value("${message}")
+    @Value("${message:Welcome to Youtube}")
     private String message;
 
     @GetMapping
